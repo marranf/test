@@ -54,11 +54,11 @@ class Test extends Module
         $query = 'select count(price) as count from ps_product where price >= '.Configuration::get('MIN_PRICE').' and price <= '.Configuration::get('MAX_PRICE').' limit 0, 1';
 
 	    $res = Db::getInstance()->executeS($query);
-         foreach ($res AS $row)
+	    foreach ($res AS $row)
              $count = $row['count'];
 	    $this->context->smarty->assign('count', $count);
 	    $this->context->smarty->assign('price_min',Configuration::get("MIN_PRICE"));
-        $this->context->smarty->assign('price_max',Configuration::get("MAX_PRICE"));
+	    $this->context->smarty->assign('price_max',Configuration::get("MAX_PRICE"));
 	    return $this->display(__FILE__, 'test.tpl');
 	}
     private function _displayForm()
