@@ -2,7 +2,7 @@
 <module>
     <name>test</name>
     <displayName><![CDATA[Test]]></displayName>
-    <version><![CDATA[0.2.0]]></version>
+    <version><![CDATA[0.2.2]]></version>
     <description><![CDATA[Устанавливает диапазон цен для показа.]]></description>
     <author><![CDATA[marran]]></author>
     <tab><![CDATA[other]]></tab>
